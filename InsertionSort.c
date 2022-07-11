@@ -1,13 +1,11 @@
 #include "Sorting.h"
 
-void InsertionSort(int *arr)
+void InsertionSort(int *arr, int length)
 {
-	size_t length;
 	int i;
 	int j;
 	int key;
 
-	length = sizeof(arr);
 	i = 1;
 	while (i < length)
 	{

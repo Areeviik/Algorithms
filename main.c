@@ -2,17 +2,24 @@
 
 int main()
 {
-    int *arr = malloc(5);
-    arr[0] = 21;
-    arr[1] = 7;
-    arr[2] = 55;
-    arr[3] = -3;
-    arr[4] = 0;
+	int *arr1 = (int *)malloc(sizeof(int) * 1000);
+	int *arr2 = (int *)malloc(sizeof(int) * 10000);
+	int *arr3 = (int *)malloc(sizeof(int) * 20000);
 
-    int n = sizeof(arr)/sizeof(arr[0]);
-    BubbleSort(arr);
-    printf("Sorted array:\n");
-    printArray(arr, n);
-    return 0;
+	gen_arrays(arr1, 1000);
+	gen_arrays(arr2, 10000);
+	gen_arrays(arr3, 20000);
+
+	int *cp = make_copy(arr1, 1000);
+
+	BubbleSort(cp, 1000);
+	int i = 0 ;
+	
+	while (cp[i])
+	{
+		printf("%d\n", cp[i]);
+		++i;
+	}
+
 
 }

@@ -1,11 +1,8 @@
 #include "Sorting.h"
 
-void BubbleSort(int *arr)
+void BubbleSort(int *arr, int length)
 {
 	int i, j;
-	size_t length;
-
-	length = sizeof(arr);
 
 	i = 0;
 	while (i < length - 1)

@@ -1,13 +1,10 @@
 #include "Sorting.h"
 
-void SelectionSort(int *arr)
+void SelectionSort(int *arr, int length)
 {
-	size_t length;
 	int i;
 	int j;
 	int min;
-
-	length = sizeof(arr);
 
 	i = 0;
 	while (i < length)

@@ -1,6 +1,6 @@
 NAME = soring
 
-FLAGS = -Werror -Wextra -Wall -std=c++98
+FLAGS = -Werror -Wextra -Wall 
 
 SRCS = $(shell find "." -name "*.c")
 
