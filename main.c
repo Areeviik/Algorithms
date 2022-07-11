@@ -11,15 +11,31 @@ int main()
 	gen_arrays(arr3, 20000);
 
 	int *cp = make_copy(arr1, 1000);
-
 	BubbleSort(cp, 1000);
-	int i = 0 ;
-	
+	cp = make_copy(arr2, 10000);
+	BubbleSort(cp, 10000);
+	cp = make_copy(arr3, 20000);
+	BubbleSort(cp, 20000);
+
+	cp = make_copy(arr1, 1000);
+	InsertionSort(cp, 1000);
+	cp = make_copy(arr2, 10000);
+	InsertionSort(cp, 10000);
+	cp = make_copy(arr3, 20000);
+	InsertionSort(cp, 20000);
+
+	cp = make_copy(arr1, 1000);
+	SelectionSort(cp, 1000);
+	cp = make_copy(arr2, 10000);
+	SelectionSort(cp, 10000);
+	cp = make_copy(arr3, 20000);
+	SelectionSort(cp, 20000);
+
+	int i = 0;
 	while (cp[i])
 	{
 		printf("%d\n", cp[i]);
 		++i;
 	}
-
-
+	return 0;
 }

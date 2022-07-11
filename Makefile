@@ -1,4 +1,4 @@
-NAME = soring
+NAME = sorting
 
 FLAGS = -Werror -Wextra -Wall 
 
