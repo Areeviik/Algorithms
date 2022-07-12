@@ -3,7 +3,11 @@
 void BubbleSort(int *arr, int length)
 {
 	int i, j;
+	unsigned long long begin_time;
+	unsigned long long end_time;
+	unsigned long long final_time;
 
+	begin_time = gettime();
 	i = 0;
 	while (i < length - 1)
 	{
@@ -16,4 +20,7 @@ void BubbleSort(int *arr, int length)
 		}
 		++i;
 	}
+	end_time = gettime();
+	final_time = end_time - begin_time;
+	printf("The array was sorted by Bubble Sort algorithm in %llu seconds\n", final_time);
 }

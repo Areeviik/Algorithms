@@ -30,3 +30,13 @@ int* make_copy(int *arr, int length)
 	}
 	return cp;
 }
+
+unsigned long long	gettime(void)
+{
+	struct timeval		time;
+	unsigned long long	ms;
+
+	gettimeofday(&time, NULL);
+	ms = (time.tv_sec * 1000) + (time.tv_usec / 1000);
+	return (ms);
+}

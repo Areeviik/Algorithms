@@ -6,6 +6,11 @@ void InsertionSort(int *arr, int length)
 	int j;
 	int key;
 
+	unsigned long long begin_time;
+	unsigned long long end_time;
+	unsigned long long final_time;
+
+	begin_time = gettime();
 	i = 1;
 	while (i < length)
 	{
@@ -19,5 +24,7 @@ void InsertionSort(int *arr, int length)
 		arr[j + 1] = key;
 		++i;
 	}
-
+	end_time = gettime();
+	final_time = end_time - begin_time;
+	printf("The array was sorted by Insertion Sort algorithm in %llu seconds\n", final_time);
 }
