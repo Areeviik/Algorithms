@@ -4,7 +4,7 @@ FLAGS = -Werror -Wextra -Wall
 
 SRCS = $(shell find "." -name "*.c")
 
-OBJS = ${SRCS:.cpp=.o}
+OBJS = ${SRCS:.c=.o}
 
 RM = rm -rf
 
