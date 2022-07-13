@@ -1,14 +1,9 @@
 #include "Sorting.h"
 
-void BubbleSort(int *arr, int length)
+void	BubbleSort(int *arr, int length)
 {
-	int i, j;
-	unsigned long long begin_time;
-	unsigned long long end_time;
-	unsigned long long final_time;
-
-	begin_time = gettime();
-	i = 0;
+	int	i = 0, j;
+	unsigned long long begin_time = gettime(), end_time, final_time;
 	while (i < length - 1)
 	{
 		j = 0;

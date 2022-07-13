@@ -2,16 +2,8 @@
 
 void InsertionSort(int *arr, int length)
 {
-	int i;
-	int j;
-	int key;
-
-	unsigned long long begin_time;
-	unsigned long long end_time;
-	unsigned long long final_time;
-
-	begin_time = gettime();
-	i = 1;
+	int i = 1, j, key;
+	unsigned long long begin_time = gettime(), end_time, final_time;
 	while (i < length)
 	{
 		key = arr[i];

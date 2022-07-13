@@ -2,16 +2,8 @@
 
 void SelectionSort(int *arr, int length)
 {
-	int i;
-	int j;
-	int min;
-	
-	unsigned long long begin_time;
-	unsigned long long end_time;
-	unsigned long long final_time;
-
-	begin_time = gettime();
-	i = 0;
+	int i = 0, j, min;
+	unsigned long long begin_time = gettime(), end_time, final_time;
 	while (i < length)
 	{
 		min = i;

@@ -1,17 +1,6 @@
 #include "Sorting.h"
 
-unsigned long long MergeSort(int *arr, int length)
+void merge(int *arr, int left, int mid, int right)
 {
-    unsigned long long begin_time;
-	unsigned long long end_time;
-	unsigned long long final_time;
-
-	begin_time = gettime();
-
-    
-
-    end_time = gettime();
-	final_time = end_time - begin_time;
-    return (final_time);
+	int left_length, right_length
 }
-
