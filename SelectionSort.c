@@ -20,5 +20,5 @@ void SelectionSort(int *arr, int length)
 	}
 	end_time = gettime();
 	final_time = end_time - begin_time;
-	printf("The array was sorted by Selection Sort algorithm in %llu seconds\n", final_time);
+	printf("\033[1;36mThe array was sorted by Selection Sort algorithm in %llu milliseconds\033[0m\n", final_time);
 }

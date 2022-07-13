@@ -2,9 +2,9 @@
 
 int main()
 {
-	void first_array();
-	void second_array();
-	void third_array();
+	first_array();
+	second_array();
+	third_array();
 
 	return (0);
 }

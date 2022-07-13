@@ -11,6 +11,7 @@
 void BubbleSort(int *arr, int length);
 void InsertionSort(int *arr, int length);
 void SelectionSort(int *arr, int length);
+void QuickSort(int *arr, int first, int length);
 
 /* Utils functions */
 void first_array();
