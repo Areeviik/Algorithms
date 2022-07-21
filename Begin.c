@@ -11,8 +11,8 @@ void first_array()
 	InsertionSort(cp, 1000);
 	cp = make_copy(arr1, 1000);
 	SelectionSort(cp, 1000);
-	// cp = make_copy(arr1, 1000);
-	// MergeSort(cp, 1000);
+	cp = make_copy(arr1, 1000);
+	MergeSort(cp, 1000);
 	cp = make_copy(arr1, 1000);
 	QuickSort(cp, 0, 1000);
 }
@@ -28,6 +28,8 @@ void second_array()
 	InsertionSort(cp, 10000);
 	cp = make_copy(arr2, 10000);
 	SelectionSort(cp, 10000);
+	cp = make_copy(arr1, 10000);
+	MergeSort(cp, 10000);
 	cp = make_copy(arr2, 10000);
 	QuickSort(cp, 0, 10000);
 }
@@ -43,6 +45,8 @@ void third_array()
 	InsertionSort(cp, 20000);
 	cp = make_copy(arr3, 20000);
 	SelectionSort(cp, 20000);
+	cp = make_copy(arr1, 20000);
+	MergeSort(cp, 20000);
 	cp = make_copy(arr3, 20000);
 	QuickSort(cp,0, 20000);
 }
