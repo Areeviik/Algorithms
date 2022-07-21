@@ -2,15 +2,15 @@
 
 void Merge(int *arr, int left, int mid, int right)
 {
-    int i, j, k, n1 = m - left + 1, n2 = right - mid, Left[n1], Right[n2];
+    int i, j, k, n1 = mid - left + 1, n2 = right - mid, Left[n1], Right[n2];
 
     for (i = 0; i < n1; i++)
         Left[i] = arr[left + i];
     for (j = 0; j < n2; j++)
-        Rigth[j] = arr[mid + 1 + j];
+        Right[j] = arr[mid + 1 + j];
     i = 0;
     j = 0;
-    k = l;
+    k = left;
     while (i < n1 && j < n2)
     {
         if (Left[i] <= Right[j])
@@ -48,6 +48,6 @@ void MergeSort(int *arr, int left, int right)
         MergeSort(arr, left, mid);
         MergeSort(arr, mid + 1, right);
 
-        Merge(arr. left, mid, right);
+        Merge(arr, left, mid, right);
     }
 }

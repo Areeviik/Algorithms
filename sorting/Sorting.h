@@ -11,7 +11,7 @@
 void BubbleSort(int *arr, int length);
 void InsertionSort(int *arr, int length);
 void SelectionSort(int *arr, int length);
-void MergeSort(int *arr, int left, int right, int length);
+void MergeSort(int *arr, int left, int right);
 void QuickSort(int *arr, int first, int length);
 
 /* Utils functions */
